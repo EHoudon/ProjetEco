@@ -10,6 +10,14 @@
     --main-transition: 0.3s;
 }
 
+
+.annonce {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -93,3 +101,4 @@ button {
 button:hover {
     background-color: var(--main-black);
 }
+
