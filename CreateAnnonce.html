@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ajouter une annonce</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+<header>
+    <nav>
+        <a href="Home.html">Accueil</a>
+        <a href="DetailAnnonce.html">Voir la liste des annonces</a>
+        <a href="CreateAnnonce.html">Ajouter une annonce</a>
+    </nav>
+</header>
 
+<main>
+    <h1>Ajouter une nouvelle annonce</h1>
+    <form id="add-annonce-form">
+        <label for="title"></label><input type="text" id="title" placeholder="Titre de l'annonce" required><br>
+        <label for="username"></label><input type="text" id="username" placeholder="Nom de l'utilisateur" required><br>
+        <label for="mail"></label><input type="text" id="mail" placeholder="Mail de contact" required><br>
+        <label for="tel"></label><input type="text" id="tel" placeholder="Numéro de téléphone contact"><br>
+        <label for="description"></label><textarea id="description" placeholder="Description de l'annonce" required></textarea><br>
+        <button type="submit">Ajouter l'annonce</button>
+    </form>
+</main>
+
+<script src="Backend.js"></script>
 </body>
 </html>
