@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail des annonces</title>
+    <link rel="stylesheet" href="/Style.css">
 </head>
 <body>
-
+<h1>Liste des Annonces</h1>
+<div class="annonces-container">
+    <div class="annonce">
+        <h2>annonce.titre</h2>
+        <p><strong>Nom :</strong> <%= annonce.nom %></p>
+        <p><strong>Téléphone :</strong> <%= annonce.telephone %></p>
+        <p><strong>Email :</strong> <a href="mailto:<%= annonce.email %>"><%= annonce.email %></a></p>
+        <p><%= annonce.message %></p>
+        <p class="date">Posté le : <%= new Date(annonce.date).toLocaleDateString('fr-FR') %></p>
+    </div>
+</div>
+    <div class="annonce">
+        <h2><%= annonce.titre %></h2>
+        <p><strong>Nom :</strong> <%= annonce.nom %></p>
+        <p><strong>Téléphone :</strong> <%= annonce.telephone %></p>
+        <p><strong>Email :</strong> <a href="mailto:<%= annonce.email %>"><%= annonce.email %></a></p>
+        <p><%= annonce.message %></p>
+        <p class="date">Posté le : <%= new Date(annonce.date).toLocaleDateString('fr-FR') %></p>
+    </div>
+</div>
 </body>
 </html>
+
