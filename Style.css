@@ -2,9 +2,14 @@
     --main-black: #191308;
     --main-white: #EAE6E5;
     --main-blue: #677DB7;
+    --main-orange: #FFC90E;
     --main-text-color: #333;
     --main-border-color: #ccc;
     --main-border-radius: 5px;
     --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     --main-transition: 0.3s;
+}
+
+.button {
+   background-color: var(--main-orange);
 }
