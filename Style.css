@@ -10,6 +10,86 @@
     --main-transition: 0.3s;
 }
 
-.button {
-   background-color: var(--main-orange);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-white);
+    color: var(--main-text-color);
+}
+
+header {
+    background-color: var(--main-black);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--main-white);
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color var(--main-transition);
+}
+
+nav a:hover {
+    color: var(--main-blue);
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--main-white);
+    box-shadow: var(--main-box-shadow);
+    border-radius: var(--main-border-radius);
+}
+
+h1 {
+    text-align: center;
+    color: var(--main-black);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: var(--main-text-color);
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--main-border-color);
+    border-radius: var(--main-border-radius);
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color var(--main-transition), box-shadow var(--main-transition);
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: var(--main-blue);
+    box-shadow: 0 0 5px var(--main-blue);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--main-blue);
+    color: var(--main-white);
+    border: none;
+    border-radius: var(--main-border-radius);
+    cursor: pointer;
+    transition: background-color var(--main-transition);
+}
+
+button:hover {
+    background-color: var(--main-black);
 }
